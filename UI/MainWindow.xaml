@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="DiceRoller" Height="500" Width="100">
+        Title="DiceRoller" Height="400" Width="70" WindowStyle="ToolWindow">
     <Grid Background="DimGray">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -15,24 +15,28 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
-            <RowDefinition Height="4*"/>
+            <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
 
-        <Button Grid.Row="0" Content="D100" Height="25" Width="70" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D100"/>
-        <Button Grid.Row="1" Content="D12" Height="25" Width="70" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D12"/>
-        <Button Grid.Row="2" Content="D10" Height="25" Width="70" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D10"/>
-        <Button Grid.Row="3" Content="D8" Height="25" Width="70" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D8"/>
-        <Button Grid.Row="4" Content="D6" Height="25" Width="70" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D6"/>
-        <Button Grid.Row="5" Content="D4" Height="25" Width="70" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D4"/>
-        <Button Grid.Row="6" Content="D20" Height="25" Width="70" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D20"/>
+        <Button Grid.Row="0" Content="D100" Height="25" Width="50" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D100"/>
+        <Button Grid.Row="1" Content="D12" Height="25" Width="50" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D12"/>
+        <Button Grid.Row="2" Content="D10" Height="25" Width="50" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D10"/>
+        <Button Grid.Row="3" Content="D8" Height="25" Width="50" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D8"/>
+        <Button Grid.Row="4" Content="D6" Height="25" Width="50" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D6"/>
+        <Button Grid.Row="5" Content="D4" Height="25" Width="50" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D4"/>
+        <Button Grid.Row="6" Content="D20" Height="25" Width="50" VerticalAlignment="Center" Background="Aquamarine" Click="OnClick_D20"/>
         
         <Border Grid.Row="7" BorderBrush="Brown" BorderThickness="2">
             <RichTextBox Grid.Row="7" Background="Beige" x:Name="ResultMessages" VerticalScrollBarVisibility="Auto">
+
                 <RichTextBox.Resources>
                     <Style TargetType="{x:Type Paragraph}">
                         <Setter Property="Margin" Value="0"/>
                     </Style>
                 </RichTextBox.Resources>
+                
+                <FlowDocument TextAlignment="Center" PagePadding="0"/>
+                
             </RichTextBox>
         </Border>
 

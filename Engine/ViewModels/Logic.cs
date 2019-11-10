@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Engine.Tools;
 
 namespace Engine.ViewModels
 {
-    public class Logic : BaseNotificationClass
+    public class Logic
     {
         public event EventHandler<BaseMessageEventArgs> OnMessageRaised;
 

@@ -55,7 +55,6 @@ namespace UI
         {
             ResultMessages.Document.Blocks.Add(new Paragraph(new Run(e.Message)));
             ResultMessages.ScrollToEnd();
-
         }
     }
 }
